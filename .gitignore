@@ -13,3 +13,4 @@ prettier.cache
 
 package-locl.json
 
+src/test.ts
