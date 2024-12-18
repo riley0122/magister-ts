@@ -1,0 +1,15 @@
+node_modules/
+
+dist/
+
+*.tsbuildinfo
+
+logs/
+*.logs
+
+.cache/
+eslintcache
+prettier.cache
+
+package-locl.json
+
