@@ -1,10 +1,10 @@
-import MagisterProfile from './MagisterProfile';
+import MagisterProfile from './MagisterProfile.js';
 
 export class Magister {
   private _profile: MagisterProfile | undefined = undefined;
 
-  authenticate(school: string, token: string) {
-    this._profile = new MagisterProfile(school, token);
+  async authenticate(school: string, token: string) {
+    this._profile = await MagisterProfile.create(school, token);
   }
 
   public get profile(): MagisterProfile | undefined {

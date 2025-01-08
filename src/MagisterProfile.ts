@@ -1,4 +1,4 @@
-import MagisterPerson from './MagisterPerson';
+import MagisterPerson from './MagisterPerson.js';
 
 import axios from 'axios';
 
@@ -8,11 +8,15 @@ export default class MagisterProfile {
   private _school: string | undefined = undefined;
   private _person: MagisterPerson | undefined = undefined;
 
-  constructor(school: string, token: string) {
-    this._school = school;
-    this._token = token;
-    this.Verify();
-  }
+  private constructor() {}
+
+  static create = async (school: string, token: string) => {
+    const me = new MagisterProfile();
+    me._school = school;
+    me._token = token;
+    await me.Verify();
+    return me;
+  };
 
   private async Verify(): Promise<void> {
     if (!this._school || !this._token) {
