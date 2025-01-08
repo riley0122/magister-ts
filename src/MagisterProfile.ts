@@ -50,7 +50,7 @@ export default class MagisterProfile {
     }
   }
 
-  AuthenticatedRequest(endpoint: string): Promise<any | null> {
+  public AuthenticatedRequest(endpoint: string): Promise<any | null> {
     if (this._id === 0) {
       console.warn('Not yet authenticated!');
       return new Promise<null>((resolve) => {
