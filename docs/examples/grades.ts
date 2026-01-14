@@ -2,6 +2,7 @@
 // As of 14/01/2026 grades arent implemented into magister-ts.
 // However, since you can make requests to magister on behalve of the user,
 // you can add functionality yourself, as long as you know the endpoint.
+// This implementation is a translation of rubymag's implementation.
 import { Magister } from "magister-ts";
 import dotenv from 'dotenv/config.js';
 
