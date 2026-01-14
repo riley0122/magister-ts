@@ -11,7 +11,7 @@ In order to install `Magister-ts` into your project, run `npm install magister-t
 
 ## Documentation
 
-> You can find documentation in the [`docs/`](/docs/) folder.
+> You can find documentation in the [`docs/`](https://github.com/riley0122/magister-ts/tree/master/docs) folder.
 
 ### Table of contents
 

@@ -1,6 +1,6 @@
 {
   "name": "magister-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Magister API wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,5 +28,6 @@
   "dependencies": {
     "axios": "^1.7.9"
   },
-  "readme": "docs/readme"
+  "readme": "docs/readme",
+  "homepage": "https://github.com/riley0122/magister-ts"
 }
